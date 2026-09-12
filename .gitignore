@@ -1,0 +1,35 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw dataset - too large for GitHub
+data/raw/
+
+# Local/archive files
+archive.zip
+data/processed/archive/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs / temporary files
+*.log
+*.tmp
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+
+data/processed/amazon_cases.jsonl
+data/processed/customer_messages.csv

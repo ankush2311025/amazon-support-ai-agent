@@ -1,0 +1,26 @@
+example_id,gold_intent,predicted_intent,classification_method,top_similarity,customer_message
+3,package_not_received,tracking_delivery_status,keyword,0.7800429463386536,".@115821 delivers package, tracking says it was received by me.
+
+But I've been at work this entire time.
+
+Next 3 hours: anxiety attack."
+26,seller_marketplace,damaged_defective_wrong_item,keyword,0.9235856533050536,"@115850 has unauthorized sellers like @226787 in India who sell faulty products/false warranty claims, hence avoid buying! PFA proof. https://t.co/hnGeWB2XGe"
+36,seller_marketplace,return_refund,keyword,0.8560153245925903,@115850 @115821 @AmazonHelp @115850 worst thing is.. After whatever mistakes he has done...   After first unsuccessful attempt he has returned my order to seller
+65,delivery_delay,tracking_delivery_status,keyword,0.7848966121673584,"@12339 @215765 
+Tracking Number# 5180793475130
+May I know why is the item from @115850  rescheduled without my consent??"
+77,return_refund,tracking_delivery_status,keyword,0.8703620433807373,@AmazonHelp but where is my money. U are making me fool and that's not a right thing. u did not check my order process
+92,other_unclear,damaged_defective_wrong_item,semantic,0.8074887990951538,"@AmazonHelp Everything went wrong in last 1 year.  Every genuine concern is ignored with a Blind Eye.  Seller Support, Escalation Support all failed."
+112,other_unclear,delivery_delay,keyword,0.8804785013198853,@AmazonHelp Too late i drive
+118,return_refund,order_cancellation_modification,semantic,0.8584446907043457,@AmazonHelp I don't want my order now PLEASE REIMBURSE I cancelled the order already on 12th
+125,package_not_received,tracking_delivery_status,keyword,0.7781270146369934,What's going on @115821? Q40702658884 Has NOT been delivered despite your tracking info saying it has. Why do you keep losing our packages?
+149,package_not_received,prime_membership_benefit,keyword,0.8265125751495361,@115821 is fucking garbage I’m a prime member for no reason this is the 3rd time I bought something and they lost my fuckin package!
+154,tracking_delivery_status,delivery_delay,keyword,0.844733476638794,@AmazonHelp App still says will be delivered today. I appreciate it cannot give me a date until despatch but surely a ‘delayed’ notification possible?
+156,prime_membership_benefit,return_refund,semantic,0.8660231828689575,"@AmazonHelp hi I accidentally bought a,prime membership how do I get a refund"
+157,payment_unexpected_charge,technical_product_issue,semantic,0.8858667016029358,待って最悪メールアドレス変えたの忘れててAmazonの支払い番号のメール届かない😩
+163,technical_product_issue,seller_marketplace,semantic,0.8178800940513611,@AmazonHelp But how can it be a deal of the day if it's not even available to buy? Makes no sense.
+164,payment_unexpected_charge,technical_product_issue,semantic,0.8746709823608398,夜にアマゾンで注文したんだけど、未だに支払いメールが来ない…在庫はあるみたいだったんだけどなぁ。
+190,payment_unexpected_charge,seller_marketplace,semantic,0.8688880205154419,"@115850 @AmazonHelp 
+As per Great India Sale on 9th August to 12th August 2017, i should get 15% cashback of ₹750.60 for order value ₹5004 .I made payment using SBI Credit card through Amazon mobile app.But i had received only 10% cashback of ₹500.40 on 11th Nov 2017."
+195,other_unclear,technical_product_issue,semantic,0.984131157398224,"@AmazonHelp Still not working, any help?"
+200,delivery_delay,seller_marketplace,keyword,0.8280888795852661,"@115830 Hi. I placed an order a month ago, delivery date exceeded. No item delivered. No response from emails sent. Both seller and amazon"

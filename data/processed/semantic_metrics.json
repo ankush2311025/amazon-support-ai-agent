@@ -1,0 +1,8 @@
+{
+  "model": "all-MiniLM-L6-v2 + Logistic Regression",
+  "training_examples": 3944,
+  "golden_examples": 200,
+  "accuracy": 0.51,
+  "macro_f1": 0.5076443709157169,
+  "weighted_f1": 0.468863135996375
+}

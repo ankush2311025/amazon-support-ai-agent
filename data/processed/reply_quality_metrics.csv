@@ -1,0 +1,2 @@
+examples,evidence_hit_at_1,evidence_rank2_relevance,evidence_rank3_relevance,evidence_hit_at_3,reply_relevance_mean,reply_groundedness_mean,reply_helpfulness_mean,reply_safety_mean,reply_overall_mean
+48,0.875,0.8125,0.7708333333333334,1.0,4.520833333333333,4.4375,3.3333333333333335,4.458333333333333,4.083333333333333
