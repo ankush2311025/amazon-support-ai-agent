@@ -330,11 +330,56 @@ def generate_reply(
     )
 
 
+
+
+def detect_non_support_message(text):
+    """Detect casual/non-support messages that do not need escalation."""
+    normalized = " ".join(str(text).strip().lower().split())
+
+    casual_messages = {
+        "hi", "hii", "hiii",
+        "hello", "helloo",
+        "hey", "heyy", "heyyy",
+        "yo", "sup", "hola",
+        "good morning", "good afternoon", "good evening",
+        "gm", "gn",
+        "thanks", "thank you", "thx", "ty",
+        "ok", "okay", "k",
+        "cool", "great", "nice",
+        "lol", "lmao", "haha",
+        "huh", "what", "wtf",
+        "test", "testing",
+    }
+
+    if normalized in casual_messages:
+        return True
+
+    emoji_chars = set("😂🤣😭😅😊🙂🙃😉👍👎❤️❤🙏😐😑😮😡🤦🤷")
+
+    if normalized and all(char in emoji_chars for char in normalized):
+        return True
+
+    return False
+
+
 # ---------------------------------------------------------
 # Main agent
 # ---------------------------------------------------------
 
 def run_agent(text):
+
+    # Handle casual/non-support messages before classification
+    if detect_non_support_message(text):
+        return {
+            "customer_message": text,
+            "intent": "other_unclear",
+            "classification_method": "casual_message",
+            "classification_confidence": 1.0,
+            "decision": "auto_handle",
+            "escalation_reason": "Casual or non-support message does not require escalation.",
+            "reply": "Hi! How can I help you today?",
+            "evidence": [],
+        }
 
     # 1. Classify intent
     classification = classify_intent(
