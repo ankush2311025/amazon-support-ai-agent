@@ -1,3 +1,8 @@
+﻿## Live Demo
+
+**Streamlit App:** https://amazon-support-ai-agent-ggewbva4mmncoafvucw4wm.streamlit.app/
+
+> The hosted demo runs on Streamlit Community Cloud. The first load may take a little longer while the app initializes its ML model and retrieval index.
 # Amazon Customer Support AI Agent
 
 A reproducible AI support-agent prototype for the **Hiver SDE Intern take-home assignment**.
@@ -264,27 +269,27 @@ python src\train_semantic_classifier.py
 
 ```text
 HiverAssignment/
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── data/
-│   └── processed/
-│       ├── golden_set.csv
-│       ├── weak_training_set.csv
-│       ├── training_embeddings.npy
-│       ├── retrieval_corpus.csv
-│       ├── retrieval_embeddings.npy
-│       └── evaluation artifacts
-│
-└── src/
-    ├── support_agent.py              # main entry point
-    ├── hybrid_classifier.py
-    ├── confidence_hybrid_classifier.py
-    ├── escalation_policy.py
-    ├── data preparation scripts
-    ├── evaluation scripts
-    └── archive/                      # exploratory/intermediate scripts
+â”œâ”€â”€ README.md
+â”œâ”€â”€ requirements.txt
+â”œâ”€â”€ .gitignore
+â”‚
+â”œâ”€â”€ data/
+â”‚   â””â”€â”€ processed/
+â”‚       â”œâ”€â”€ golden_set.csv
+â”‚       â”œâ”€â”€ weak_training_set.csv
+â”‚       â”œâ”€â”€ training_embeddings.npy
+â”‚       â”œâ”€â”€ retrieval_corpus.csv
+â”‚       â”œâ”€â”€ retrieval_embeddings.npy
+â”‚       â””â”€â”€ evaluation artifacts
+â”‚
+â””â”€â”€ src/
+    â”œâ”€â”€ support_agent.py              # main entry point
+    â”œâ”€â”€ hybrid_classifier.py
+    â”œâ”€â”€ confidence_hybrid_classifier.py
+    â”œâ”€â”€ escalation_policy.py
+    â”œâ”€â”€ data preparation scripts
+    â”œâ”€â”€ evaluation scripts
+    â””â”€â”€                       # exploratory/intermediate scripts
 ```
 
 The raw dataset and local virtual environment are not required for the main demo.
@@ -338,3 +343,6 @@ Known limitations:
 - no live order/account information is available.
 
 The system is therefore evaluated on **behavioral correctness, safety, reproducibility and transparent failure analysis**, rather than production-scale automation claims.
+
+
+
